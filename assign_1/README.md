@@ -1,0 +1,32 @@
+# 
+
+## 目标检测模型（RTMDet-tiny）
+### Baseline
+
+
+### My epoch300 result
+
+
+
+
+## 关键点检测模型（RTMPose-s）
+
+### Baseline
+
+
+### my epoch300 result
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets= 20 ] =  0.736
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets= 20 ] =  1.000
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets= 20 ] =  0.902
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets= 20 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets= 20 ] =  0.736
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 20 ] =  0.764
+ Average Recall     (AR) @[ IoU=0.50      | area=   all | maxDets= 20 ] =  1.000
+ Average Recall     (AR) @[ IoU=0.75      | area=   all | maxDets= 20 ] =  0.929
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets= 20 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets= 20 ] =  0.764
+06/04 00:04:21 - mmengine - INFO - Evaluating PCKAccuracy (normalized by ``"bbox_size"``)...
+06/04 00:04:21 - mmengine - INFO - Evaluating AUC...
+06/04 00:04:21 - mmengine - INFO - Evaluating NME...
+06/04 00:04:21 - mmengine - INFO - Epoch(test) [2/2]    coco/AP: 0.736280  coco/AP .5: 1.000000  coco/AP .75: 0.902223  coco/AP (M): -1.000000  coco/AP (L): 0.736280  coco/AR: 0.764286  coco/AR .5: 1.000000  coco/AR .75: 0.928571  coco/AR (M): -1.000000  coco/AR (L): 0.764286  PCK: 0.968254  AUC: 0.122052  NME: 0.041862  data_time: 3.992798  time: 4.789786
+
