@@ -1,7 +1,11 @@
 PYTHON="/home/ilab/software/anaconda3/envs/openmmlab/bin/python"
+
 cd /home/ilab/dolijunc/project/mmpose
+## train
 ${PYTHON} tools/train.py data/Ear210_Keypoint_Dataset_coco/openmmlab_config/rtmpose-s-ear.py
+## test
 ${PYTHON} tools/test.py data/Ear210_Keypoint_Dataset_coco/openmmlab_config/rtmpose-s-ear.py  work_dirs/rtmpose-s-ear/best_PCK_epoch_260.pth
+## inference
 ${PYTHON} demo/topdown_demo_with_mmdet.py  \
           data/Ear210_Keypoint_Dataset_coco/openmmlab_config/rtmdet_tiny_ear.py \
           ../mmdetection/work_dirs/rtmdet_tiny_ear/best_coco_bbox_mAP_epoch_165.pth \
@@ -21,8 +25,11 @@ ${PYTHON} demo/topdown_demo_with_mmdet.py  \
 
 
 cd /home/ilab/dolijunc/project/mmdetection
+## train
 ${PYTHON} tools/train.py data/Ear210_Keypoint_Dataset_coco/openmmlab_config/rtmdet_tiny_ear.py
+## test
 ${PYTHON} tools/test.py data/Ear210_Keypoint_Dataset_coco/openmmlab_config/rtmdet_tiny_ear.py  work_dirs/rtmdet_tiny_ear/best_coco_bbox_mAP_epoch_165.pth
+## inference
 ${PYTHON} demo/image_demo.py data/Ear210_Keypoint_Dataset_coco/openmmlab_config/myEar0.jpg \
           data/Ear210_Keypoint_Dataset_coco/openmmlab_config/rtmdet_tiny_ear.py \
           --weights work_dirs/rtmdet_tiny_ear/best_coco_bbox_mAP_epoch_165.pth \
