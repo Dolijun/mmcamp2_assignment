@@ -1,5 +1,56 @@
 # 01_mmpose_assign
 
+### directory tree
+```
+.
+├── openmmlab_config
+│   ├── myEar0.jpg
+│   ├── myEar.jpg
+│   ├── resize_.py
+│   ├── rtmdet_tiny_ear.py
+│   ├── rtmpose-s-ear.py
+│   └── run.sh
+├── README.md
+├── RTMDet_tiny_ear
+│   ├── inference
+│   │   ├── preds
+│   │   │   └── myEar0.json
+│   │   └── vis
+│   │       └── myEar0.jpg
+│   ├── rtmdet_tiny_ear.py
+│   ├── test
+│   │   ├── 20230604_114753.json
+│   │   ├── 20230604_114753.log
+│   │   ├── result.txt
+│   │   └── vis_data
+│   │       └── config.py
+│   └── train
+│       ├── 20230604_004321.log
+│       └── vis_data
+│           ├── 20230604_004321.json
+│           ├── config.py
+│           └── scalars.json
+└── RTMPose_s_ear
+    ├── epoch_300_result.txt
+    ├── inference
+    │   └── myEar0.jpg
+    ├── rtmpose-s-ear.py
+    ├── test_epoch300
+    │   ├── 20230604_000340.json
+    │   ├── 20230604_000340.log
+    │   └── vis_data
+    │       └── config.py
+    └── train
+        ├── 20230603_200120.log
+        └── vis_data
+            ├── 20230603_200120.json
+            ├── config.py
+            └── scalars.json
+
+15 directories, 28 files
+
+```
+
 ## 目标检测模型（RTMDet-tiny）
 
 ### epoch165 result
