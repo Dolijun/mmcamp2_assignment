@@ -3,7 +3,7 @@
 ### directory tree
 ```
 .
-├── openmmlab_config
+├── openmmlab_config	 # 
 │   ├── myEar0.jpg
 │   ├── myEar.jpg
 │   ├── resize_.py
@@ -70,6 +70,8 @@
 06/04 11:48:04 - mmengine - INFO - bbox_mAP_copypaste: 0.804 0.967 0.967 -1.000 -1.000 0.804
 06/04 11:48:04 - mmengine - INFO - Epoch(test) [11/11]    coco/bbox_mAP: 0.8040  coco/bbox_mAP_50: 0.9670  coco/bbox_mAP_75: 0.9670  coco/bbox_mAP_s: -1.0000  coco/bbox_mAP_m: -1.0000  coco/bbox_mAP_l: 0.8040  data_time: 0.3000  time: 0.4225
 ```
+### Predict
+![image](./RTMDet_tiny_ear/inference/vis/myEar0.jpg)
 
 ## 关键点检测模型（RTMPose-s）
 
@@ -90,3 +92,6 @@
 06/04 00:04:21 - mmengine - INFO - Evaluating NME...
 06/04 00:04:21 - mmengine - INFO - Epoch(test) [2/2]    coco/AP: 0.736280  coco/AP .5: 1.000000  coco/AP .75: 0.902223  coco/AP (M): -1.000000  coco/AP (L): 0.736280  coco/AR: 0.764286  coco/AR .5: 1.000000  coco/AR .75: 0.928571  coco/AR (M): -1.000000  coco/AR (L): 0.764286  PCK: 0.968254  AUC: 0.122052  NME: 0.041862  data_time: 3.992798  time: 4.789786
 ```
+
+### Predict
+![image](./RTMPose_s_ear/inference/vis/myEar0.jpg)
