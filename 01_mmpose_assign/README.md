@@ -3,52 +3,50 @@
 ### directory tree
 ```
 .
-├── openmmlab_config	 # 
-│   ├── myEar0.jpg
-│   ├── myEar.jpg
-│   ├── resize_.py
-│   ├── rtmdet_tiny_ear.py
-│   ├── rtmpose-s-ear.py
-│   └── run.sh
+├── openmmlab_config	        # 训练相关的配置文件
+│   ├── myEar0.jpg              # my ear
+│   ├── myEar.jpg               # my ear 原图
+│   ├── resize_.py              # 缩放原图尺寸
+│   ├── rtmdet_tiny_ear.py      # RTMDet 配置文件
+│   ├── rtmpose-s-ear.py        # RTMPose 配置文件
+│   └── run.sh                  # 训练，测试，推理的shell脚本
 ├── README.md
-├── RTMDet_tiny_ear
-│   ├── inference
-│   │   ├── preds
+├── RTMDet_tiny_ear             # RTMDet 训练测试推理相关文件
+│   ├── inference               # RTMDet 预测结果
+│   │   ├── preds
 │   │   │   └── myEar0.json
 │   │   └── vis
 │   │       └── myEar0.jpg
-│   ├── rtmdet_tiny_ear.py
-│   ├── test
-│   │   ├── 20230604_114753.json
+│   ├── rtmdet_tiny_ear.py      
+│   ├── test                    # RTMDet 测试日志
+│   │   ├── 20230604_114753.json
 │   │   ├── 20230604_114753.log
-│   │   ├── result.txt
-│   │   └── vis_data
+│   │   ├── result.txt          # 测试结果记录在result.txt
+│   │   └── vis_data
 │   │       └── config.py
-│   └── train
-│       ├── 20230604_004321.log
+│   └── train                   # RTMDet 训练日志
+│       ├── 20230604_004321.log
 │       └── vis_data
 │           ├── 20230604_004321.json
 │           ├── config.py
 │           └── scalars.json
-└── RTMPose_s_ear
-    ├── epoch_300_result.txt
-    ├── inference
-    │   └── myEar0.jpg
+└── RTMPose_s_ear               # RTMPose 训练测试推理相关文件
+    ├── epoch_300_result.txt    # 测试结果
+    ├── inference               # 推理结果
+    │   └── myEar0.jpg
     ├── rtmpose-s-ear.py
-    ├── test_epoch300
-    │   ├── 20230604_000340.json
+    ├── test_epoch300           # 测试日志
+    │   ├── 20230604_000340.json
     │   ├── 20230604_000340.log
     │   └── vis_data
     │       └── config.py
-    └── train
+    └── train                   # 训练日志
         ├── 20230603_200120.log
         └── vis_data
             ├── 20230603_200120.json
             ├── config.py
             └── scalars.json
-
 15 directories, 28 files
-
 ```
 
 ## 目标检测模型（RTMDet-tiny）
@@ -94,4 +92,4 @@
 ```
 
 ### Predict
-![image](./RTMPose_s_ear/inference/vis/myEar0.jpg)
+![image](./RTMPose_s_ear/inference/myEar0.jpg)
