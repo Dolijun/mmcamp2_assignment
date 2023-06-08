@@ -3,6 +3,7 @@
 ## 文件列表
 ```shell
 .
+├── font                            # 字体文件 .ttf
 ├── out_0                           # 训练日志
 │   ├── 20230608_004355
 │   │   ├── 20230608_004355.log
@@ -20,7 +21,10 @@
 │   │   └── config.py
 │   └── resnet50_ft.py
 ├── resnet50_ft.py                  # 配置文件
+├── predict.py                      # 预测脚本
 ├── run.sh                          # 运行脚本
+├── apple.png                       # 预测原图
+├── apple_res.png                   # 预测结果
 └── split_datasets.py               # 数据集划分
 
 6 directories, 13 files
