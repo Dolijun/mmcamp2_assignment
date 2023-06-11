@@ -31,7 +31,7 @@
 2023/06/11 23:39:14 - mmengine - INFO - Epoch(test) [13/13]    coco/bbox_mAP: 0.7800  coco/bbox_mAP_50: 0.8710  coco/bbox_mAP_75: 0.8470  coco/bbox_mAP_s: 0.0000  coco/bbox_mAP_m: 0.5240  coco/bbox_mAP_l: 0.9140  data_time: 0.0272  time: 0.1134
 ```
 # 预测结果
-![image](./inference/output/vis/balloon.jpg)
+![image](./inference/vis/balloon.jpg)
 
 # 特征可视化
 ![image](./feature_visualization/output/balloon.jpg)
