@@ -1,29 +1,29 @@
 # 文件列表
 ```shell
 .
-├── feature_visualization
-│   └── output
+├── feature_visualization   # 特征可视化结果
+│   └── output
 │       └── balloon.jpg
-├── inference
-│   ├── preds
+├── inference               # 推理结果
+│   ├── preds
 │   │   └── balloon.json
 │   └── vis
 │       └── balloon.jpg
-├── json2coco.py
+├── json2coco.py            # json转coco标注脚本
 ├── README.md
-├── run.sh
-├── test_log
-│   ├── 20230611_233910.json
+├── run.sh                  # 运行脚本
+├── test_log                # 测试日志
+│   ├── 20230611_233910.json
 │   ├── 20230611_233910.log
 │   └── vis_data
 │       └── config.py
-├── train_log
-│   ├── 20230611_232858.log
+├── train_log               # 训练日志
+│   ├── 20230611_232858.log
 │   └── vis_data
 │       ├── 20230611_232858.json
 │       ├── config.py
 │       └── scalars.json
-└── zj_config.py
+└── zj_config.py            # 助教的配置文件
 ```
 # 验证结果
 ```shell
