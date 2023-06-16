@@ -52,5 +52,5 @@
 ![image](./predict.jpg)
 
 ## 视频
-
+https://github.com/Dolijun/mmcamp2_assignment/blob/main/04_mmseg_assign/predict_2.avi
 
